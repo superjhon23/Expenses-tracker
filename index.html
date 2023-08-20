@@ -8,20 +8,24 @@
 </head>
 <body>
   <header class="header">
-    <div class="container navbar">
+    <div class="container navbar js-navbar">
       <h2> Expenses tracker :D </h2>
       <nav>
-        <ul>
+        <ul class="navbar-links" role="list">
           <li><a href="index.html">List expenses</a></li>
           <li><a href="#">Add expenses</a></li>
         </ul>
       </nav>
-      <div>
-        <img src="./icons/menu.svg" alt="menu button">
-        <img src="./icons/close.svg" alt="close menu">
+      <div class="navbar-icons js-navbar-menu">
+        <img src="./icons/menu.svg" class="navbar__menu-icon" alt="menu button">
+        <img src="./icons/close.svg" class="navbar__menu-icon-close" alt="close menu">
       </div>
     </div>
   </header>
+  <footer class="footer">
+    Jhonatan M - Codeable - C11 2023
+  </footer>
   <script src="index.js"></script>
+  <script src="navbar.js"></script>
 </body>
 </html>
