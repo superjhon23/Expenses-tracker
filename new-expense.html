@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Expenses tracker</title>
+  <title>New expense</title>
 </head>
 <body>
   <header class="header">
@@ -13,7 +13,7 @@
       <nav>
         <ul class="navbar-links" role="list">
           <li><a href="index.html">List expenses</a></li>
-          <li><a href="new-expense.html">Add expenses</a></li>
+          <li><a href="#">Add expenses</a></li>
         </ul>
       </nav>
       <div class="navbar-icons js-navbar-menu">
@@ -24,21 +24,22 @@
   </header>
   <main class="js-main">
     <div class="container">
-      <ul class="expenses">
-        <li class="expense">
-          <div class="expense__detail">
-            <div>
-              <p class="heading--xs bold">Shopping</p>
-              <p class="content-sm gray-300">Nintendo :'v</p>
-            </div>
-              <p class="content-xl bold">$350</p>
-          </div>
-          <div class="expense__actions">
-            <a href="#">Delete</a>
-          </div>
-        </li>
-      </ul>
-      <a href="new-expense.html" class="block text-center">Add new expense</a>
+      <h2 class="heading--sm text-center mb-4"> Add New Expense </h2>
+      <form action="#" class="flex flex-column gap-4 mb-4">
+        <div>
+          <label class="content-xs overline" for="category">Category</label>
+          <input class="input__container" type="text" id="category" name="category">
+        </div>
+        <div>
+          <label class="content-xs overline" for="description">description</label>
+          <input class="input__container" type="text" id="description" name="description">
+        </div>
+        <div>
+          <label class="content-xs overline" for="amount">amount</label>
+          <input class="input__container" type="number" id="amount" name="amount">
+        </div>
+        <button type="submit" class="button button--primary button-lg full-width">webito con jamon uwu</button>
+      </form>
     </div>
   </main>
   <footer class="footer">
